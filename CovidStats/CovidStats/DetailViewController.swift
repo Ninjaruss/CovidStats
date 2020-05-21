@@ -17,7 +17,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var TotalRecovered: UILabel!
     @IBOutlet weak var NavBar: UINavigationItem!
     
-    
     @IBAction func CancelButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

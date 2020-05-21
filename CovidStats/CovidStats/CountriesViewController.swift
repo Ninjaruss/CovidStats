@@ -6,6 +6,18 @@ class CountriesViewController: UIViewController,   UITableViewDelegate, UITableV
     @IBOutlet weak var countryTable: UITableView!
     
     
+    @IBAction func RefreshCountries(_ sender: Any) {
+        CovidAPI().FetchSummary(completion: { jsonObject in
+            if let jsonObject = jsonObject {
+                let countries = jsonObject.Countries
+                for country in countries{
+                    countriesList.append(country!)
+                }
+                self.countryTable.reloadData()
+            }
+        })
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (countriesList.count)
     }
