@@ -1,7 +1,5 @@
 # CovidStats
-A mobile app for iOS that was built using Swift. 
-
-API: https://covid19api.com  
+A mobile app on iOS for tracking COVID-19 using the Swift programming language. 
 
 ## Project Description
 An app designed to help people track the statistics behind COVID-19 using an external API. Gained exposure to the art of mobile development and the model-view-controller design pattern.
